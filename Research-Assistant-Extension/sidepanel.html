@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Assistant Pro: Your 24/7 AI Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2><i class="fas fa-brain"></i> Research Assistant Pro</h2>
+        </div>
+
+        <div class="toolbar">
+            <button class="tool-btn" id="summarizeBtn" title="Summarize">
+                <i class="fas fa-compress-alt"></i>
+                <span>Summarize</span>
+            </button>
+            <button class="tool-btn" id="expandBtn" title="Expand">
+                <i class="fas fa-expand-alt"></i>
+                <span>Expand</span>
+            </button>
+            <button class="tool-btn" id="suggestBtn" title="Suggest">
+                <i class="fas fa-lightbulb"></i>
+                <span>Suggest</span>
+            </button>
+            <button class="tool-btn" id="paraphraseBtn" title="Paraphrase">
+                <i class="fas fa-sync"></i>
+                <span>Paraphrase</span>
+            </button>
+            <button class="tool-btn" id="questionsBtn" title="Generate Questions">
+                <i class="fas fa-question-circle"></i>
+                <span>Questions</span>
+            </button>
+            <button class="tool-btn" id="compareBtn" title="Compare & Contrast">
+                <i class="fas fa-balance-scale"></i>
+                <span>Compare</span>
+            </button>
+            <button class="tool-btn" id="examplesBtn" title="Examples">
+                <i class="fas fa-list"></i>
+                <span>Examples</span>
+            </button>
+            <button class="tool-btn" id="eli5Btn" title="Simplified Explanation">
+                <i class="fas fa-child"></i>
+                <span>Simplify</span>
+            </button>
+        </div>
+
+        <div class="results-section">
+            <div class="loading-spinner hidden"></div>
+            <div class="result-content"></div>
+        </div>
+
+        <div class="notes-section">
+            <div class="section-header">
+                <h3><i class="fas fa-pencil-alt"></i> Research Notes</h3>
+                <div class="notes-buttons">
+                    <button id="saveNotesBtn" class="action-btn">
+                        <i class="fas fa-save"></i> Save
+                    </button>
+                    <button id="deleteNotesBtn" class="action-btn delete-btn">
+                        <i class="fas fa-trash"></i> Delete
+                    </button>
+                </div>
+            </div>
+            <textarea id="notes" placeholder="Copy here to save notes..."></textarea>
+        </div>
+    </div>
+    <script src="sidepanel.js"></script>
+</body>
+</html>
